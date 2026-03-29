@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>DriveLux</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <link rel="icon" href="logo.jpeg">
+</head>
+<body>
+
+     
+      <nav class="navbar">
+         <div class="logo">Drive<span>Lux</span></div>
+
+         <ul class="nav-links">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#cars">Voitures</a></li>
+            <li><a href="#services-section">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+         </ul>
+      <a href="form.html">
+         <button class="btn-nav">Réserver</button>
+      </a>   
+      </nav>
+
+      
+      <header class="header">
+         <div class="overlay"></div>
+
+         <div class="content">
+            <h1>DriveLux</h1>
+            <p>Luxury in Every Ride</p>
+            <a href="form.html">
+              <button class="btn-main">Réserver Maintenant</button>
+            </a>
+         </div>
+      </header>
+
+      <section id="cars" class="cars-section">
+
+         
+         <div class="filters">
+            <button class="active" data-cat="all">All</button>
+            <button data-cat="citadines">Citadines</button>
+            <button data-cat="economique">économique</button>
+            <button data-cat="Luxe">Luxe</button>
+            <button data-cat="suv">SUV</button>
+         </div>
+
+         <div class="cars-container">
+            <div class="car-card Luxe">
+               <img src="pic1.jpeg" alt="">
+               <h3>BMW 7 Series</h3>
+             <div class="car-info">
+                  <p><i class="fa-solid fa-user"></i> 5</p>
+                  <p><i class="fa-solid fa-door-open"></i> 2 Large</p>
+                  <p><i class="fa-solid fa-gear"></i>Automatic</p>
+             </div>
+
+             <h2>2300 DH / day</h2>
+
+             <div class="buttons">
+                  <a href="bmw.html" class="book-link">
+                     <button class="book">Book</button>
+                  </a>
+
+                  <a href="#" class="whatsapp" onclick="openWhatsApp()">
+                     <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+             </div>
+            </div>
+            <div class="car-card Luxe">
+               <img src="pic2.jpeg" alt="">
+
+            <h3>Mercedes-Benz C-Class </h3>
+
+         
+            <div class="car-info">
+                  <p><i class="fa-solid fa-user"></i> 5</p>
+                  <p><i class="fa-solid fa-door-open"></i> 2 Med</p>
+                  <p><i class="fa-solid fa-gear"></i>Automatic</p>
+            </div>
+
+            <h2>1500 DH/ day</h2>
+
+            <div class="buttons">
+                  <a href="mercedes .html" class="book-link">
+                     <button class="book">Book</button>
+                  </a>
+
+                  <a href="#" class="whatsapp" onclick="openWhatsApp()">
+                     <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+            </div>
+
+
+            </div>
+            <div class="car-card Luxe">
+               <img src="pic3.jpeg" alt="">
+
+            <h3>AUDI A6 </h3>
+
+         
+            <div class="car-info">
+                  <p><i class="fa-solid fa-user"></i> 5</p>
+                  <p><i class="fa-solid fa-door-open"></i> 2 Large</p>
+                  <p><i class="fa-solid fa-gear"></i>Automatic</p>
+            </div>
+
+            <h2>1200 DH/ day</h2>
+
+           <div class="buttons">
+                  <a href="audi6.html" class="book-link">
+                     <button class="book">Book</button>
+                  </a>
+
+                  <a href="#" class="whatsapp" onclick="openWhatsApp()">
+                     <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+            </div>
+
+
+            </div>
+            <div class="car-card suv">
+               <img src="pic4.jpeg" alt="">
+
+            <h3>Dacia Duster</h3>
+
+         
+            <div class="car-info">
+                  <p><i class="fa-solid fa-user"></i> 5</p>
+                  <p><i class="fa-solid fa-door-open"></i>3 Large</p>
+                  <p><i class="fa-solid fa-gear"></i> Automatic</p>
+            </div>
+
+            <h2>320 DH/ day</h2>
+
+            <div class="buttons">
+                  <a href="dacia duster.html" class="book-link">
+                     <button class="book">Book</button>
+                  </a>
+
+                  <a href="#" class="whatsapp" onclick="openWhatsApp()">
+                     <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+            </div>
+
+
+            </div>
+            <div class="car-card citadines">
+               <img src="pic5.jpeg" alt="">
+
+            <h3>Dacia Sandero </h3>
+
+         
+            <div class="car-info">
+                  <p><i class="fa-solid fa-user"></i> 4</p>
+                  <p><i class="fa-solid fa-door-open"></i> 1 Med</p>
+                  <p><i class="fa-solid fa-gear"></i>Automatic</p>
+            </div>
+
+            <h2>270 DH/ day</h2>
+
+            <div class="buttons">
+                  <a href="dacia sandero.html" class="book-link">
+                     <button class="book">Book</button>
+                  </a>
+
+                  <a href="#" class="whatsapp" onclick="openWhatsApp()">
+                     <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+            </div>
+
+
+            </div>
+            <div class="car-card Luxe">
+               <img src="pic6.jpeg" alt="">
+
+            <h3>Ferrari Portofino </h3>
+
+         
+            <div class="car-info">
+                  <p><i class="fa-solid fa-user"></i> 4</p>
+                  <p><i class="fa-solid fa-door-open"></i> 1 small</p>
+                  <p><i class="fa-solid fa-gear"></i>Automatic</p>
+            </div>
+
+            <h2>9500 DH/ day</h2>
+
+            <div class="buttons">
+                  <a href="ferrari .html" class="book-link">
+                     <button class="book">Book</button>
+                  </a>
+
+                  <a href="#" class="whatsapp" onclick="openWhatsApp()">
+                     <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+            </div>
+
+
+            </div>
+            <div class="car-card citadines">
+               <img src="pic7.jpeg" alt="">
+
+            <h3>Fiat Panda </h3>
+
+         
+            <div class="car-info">
+                  <p><i class="fa-solid fa-user"></i> 4</p>
+                  <p><i class="fa-solid fa-door-open"></i> 1 small</p>
+                  <p><i class="fa-solid fa-gear"></i> Manual</p>
+            </div>
+
+            <h2>290 DH / day</h2>
+
+            <div class="buttons">
+                  <a href="fiat panda.html" class="book-link">
+                     <button class="book">Book</button>
+                  </a>
+
+                  <a href="#" class="whatsapp" onclick="openWhatsApp()">
+                     <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+            </div>
+
+
+            </div>
+            <div class="car-card citadines">
+               <img src="pic8.jpeg" alt="">
+
+            <h3>Kia Picanto </h3>
+
+         
+            <div class="car-info">
+                  <p><i class="fa-solid fa-user"></i> 4</p>
+                  <p><i class="fa-solid fa-door-open"></i> 1 samll</p>
+                  <p><i class="fa-solid fa-gear"></i> Manual</p>
+            </div>
+
+            <h2>250 DH / day</h2>
+
+            <div class="buttons">
+                  <a href="kia .html" class="book-link">
+                     <button class="book">Book</button>
+                  </a>
+
+                  <a href="#" class="whatsapp" onclick="openWhatsApp()">
+                     <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+            </div>
+
+            </div>
+            <div class="car-card Luxe">
+               <img src="pic9.jpeg" alt="">
+
+            <h3>Bentley Continental GT </h3>
+
+         
+            <div class="car-info">
+                  <p><i class="fa-solid fa-user"></i> 4</p>
+                  <p><i class="fa-solid fa-door-open"></i>1 Med</p>
+                  <p><i class="fa-solid fa-gear"></i>Automatic</p>
+            </div>
+
+            <h2>8000 DH/ day</h2>
+
+            <div class="buttons">
+                  <a href="bently.html" class="book-link">
+                     <button class="book">Book</button>
+                  </a>
+
+                  <a href="#" class="whatsapp" onclick="openWhatsApp()">
+                     <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+            </div>
+
+            </div>
+            <div class="car-card suv">
+               <img src="pic10.jpeg" alt="">
+
+            <h3>Hyundai Tucson </h3>
+
+         
+            <div class="car-info">
+                  <p><i class="fa-solid fa-user"></i> 5</p>
+                  <p><i class="fa-solid fa-door-open"></i> 3 Med</p>
+                  <p><i class="fa-solid fa-gear"></i>Automatic</p>
+            </div>
+
+            <h2>650 DH/ day</h2>
+
+            <div class="buttons">
+                  <a href="hyundaitucson.html" class="book-link">
+                     <button class="book">Book</button>
+                  </a>
+
+                  <a href="#" class="whatsapp" onclick="openWhatsApp()">
+                     <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+            </div>
+
+
+            </div>
+            <div class="car-card economique">
+               <img src="pic11.jpeg" alt="">
+
+            <h3>Renault Clio</h3>
+
+            <div class="car-info">
+                  <p><i class="fa-solid fa-user"></i> 5</p>
+                  <p><i class="fa-solid fa-door-open"></i> 2 Med</p>
+                  <p><i class="fa-solid fa-gear"></i> Manual</p>
+            </div>
+
+            <h2>350 DH/ day</h2>
+
+            <div class="buttons">
+                  <a href="renault clio.html" class="book-link">
+                     <button class="book">Book</button>
+                  </a>
+
+                  <a href="#" class="whatsapp" onclick="openWhatsApp()">
+                     <i class="fa-brands fa-whatsapp" ></i>
+                  </a>
+            </div>
+
+
+            </div>
+            
+            <div class="car-card economique">
+               <img src="pic13.jpeg" alt="">
+
+            <h3>Peugeot 207 </h3>
+
+        
+            <div class="car-info">
+                  <p><i class="fa-solid fa-user"></i> 5</p>
+                  <p><i class="fa-solid fa-door-open"></i> 1 Med</p>
+                  <p><i class="fa-solid fa-gear"></i> Manual</p>
+            </div>
+
+            <h2>200 DH/ day</h2>
+
+             <div class="buttons">
+                  <a href="peugeot 207.html" class="book-link">
+                     <button class="book">Book</button>
+                  </a>
+
+                  <a href="#" class="whatsapp" onclick="openWhatsApp()">
+                     <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+            </div>
+
+            </div>
+            <div class="car-card Luxe">
+               <img src="pic14.jpeg" alt="">
+
+            <h3>Porsche Taycan </h3>
+
+         
+            <div class="car-info">
+                  <p><i class="fa-solid fa-user"></i> 4</p>
+                  <p><i class="fa-solid fa-door-open"></i>2 small</p>
+                  <p><i class="fa-solid fa-gear"></i>Automatic</p>
+            </div>
+
+            <h2>4500 DH/ day</h2>
+
+            <div class="buttons">
+                  <a href="porsche.html" class="book-link">
+                     <button class="book">Book</button>
+                  </a>
+
+                  <a href="#" class="whatsapp" onclick="openWhatsApp()">
+                     <i class="fa-brands fa-whatsapp" ></i>
+                  </a>
+            </div>
+
+
+            </div>
+            
+            <div class="car-card Luxe">
+               <img src="pic12.jpeg" alt="">
+
+            <h3>Lamborghini Urus </h3>
+
+      
+            <div class="car-info">
+                  <p><i class="fa-solid fa-user"></i> 5</p>
+                  <p><i class="fa-solid fa-door-open"></i> 4 Large</p>
+                  <p><i class="fa-solid fa-gear"></i> Automatic</p>
+            </div>
+
+            <h2>8000 DH / day</h2>
+
+            <div class="buttons">
+                  <a href="Urus.html" class="book-link">
+                     <button class="book">Book</button>
+                  </a>
+
+                  <a href="#" class="whatsapp" onclick="openWhatsApp()">
+                     <i class="fa-brands fa-whatsapp" ></i>
+                  </a>
+            </div>
+
+
+            </div>
+            <div class="car-card Luxe">
+               <img src="pic17.jpeg" alt="">
+
+            <h3>Rolls-Royce Ghost </h3>
+
+         
+            <div class="car-info">
+                  <p><i class="fa-solid fa-user"></i> 5</p>
+                  <p><i class="fa-solid fa-door-open"></i> 3 Large</p>
+                  <p><i class="fa-solid fa-gear"></i>Automatic</p>
+            </div>
+
+            <h2>13000 DH/ day</h2>
+
+            <div class="buttons">
+                  <a href="rolls royce w.html" class="book-link">
+                     <button class="book">Book</button>
+                  </a>
+
+                  <a href="#" class="whatsapp" onclick="openWhatsApp()">
+                     <i class="fa-brands fa-whatsapp" ></i>
+                  </a>
+            </div>
+
+
+            </div>
+            <div class="car-card suv">
+               <img src="pic18.jpeg" alt="">
+
+            <h3>Range Rover Velar </h3>
+
+         
+            <div class="car-info">
+                  <p><i class="fa-solid fa-user"></i> 5</p>
+                  <p><i class="fa-solid fa-door-open"></i> 3</p>
+                  <p><i class="fa-solid fa-gear"></i>Automatic</p>
+            </div>
+
+            <h2>500 DH / day</h2>
+
+            <div class="buttons">
+                  <a href="range.html" class="book-link">
+                     <button class="book">Book</button>
+                  </a>
+
+                  <a href="#" class="whatsapp" onclick="openWhatsApp()">
+                     <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+            </div>
+
+
+            </div>
+            <div class="car-card citadines">
+               <img src="pic19.jpeg" alt="">
+
+            <h3>Hyundai i20 </h3>
+
+         
+            <div class="car-info">
+                  <p><i class="fa-solid fa-user"></i> 5</p>
+                  <p><i class="fa-solid fa-door-open"></i> 2 Med</p>
+                  <p><i class="fa-solid fa-gear"></i> Manual</p>
+            </div>
+
+            <h2>250 DH/ day</h2>
+
+            <div class="buttons">
+                  <a href="hyundai.html" class="book-link">
+                     <button class="book">Book</button>
+                  </a>
+
+                  <a href="#" class="whatsapp"onclick="openWhatsApp()">
+                     <i class="fa-brands fa-whatsapp" ></i>
+                  </a>
+            </div>
+
+            </div>
+         </div>
+      </section>
+      <section class="why"id="services-section">
+        <h2>Why Choose Us</h2>
+        <p class="subtitle">Premium experience with luxury vehicles</p>
+
+        <div class="features">
+
+         <div class="feature">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h3>Full Insurance</h3>
+            <p>Drive with complete coverage and peace of mind.</p>
+         </div>
+
+         <div class="feature">
+            <i class="fa-solid fa-truck-fast"></i>
+            <h3>Free Delivery</h3>
+            <p>We deliver your car anywhere you want.</p>
+         </div>
+
+         <div class="feature">
+            <i class="fa-solid fa-clock"></i>
+            <h3>24/7 Support</h3>
+            <p>Always available whenever you need help.</p>
+         </div>
+
+        
+
+      </div>
+      </section>
+      <section class="why">
+        <h2>What our clients say</h2>
+        <br>
+      
+      
+
+        <div class="features">
+
+         <div class="feature">
+            <p>⭐⭐⭐⭐⭐</p>
+            <br>
+            <h3>Yassin</h3>
+            <p>Great service! The car was clean and the booking was very easy.</p>
+         </div>
+
+         <div class="feature">
+            <p>⭐⭐⭐⭐⭐</p>
+            <br>
+            <h3>Ahmed</h3>
+            <p>Amazing experience with DriveLux. Highly recommended!</p>
+         </div>
+
+         <div class="feature">
+            <p>⭐⭐⭐⭐⭐</p>
+            <br>
+            <h3>Mina</h3>
+            <p>Très bonne expérience du début à la fin. Livraison à l’aéroport d’Agadir à l’heure, personnel professionnel et prix transparents. Rien à redire.</p>
+         </div>
+
+       
+
+      </div>
+      </section>
+      <section class="contact" id="contact">
+
+         <h2>Contact Us</h2>
+
+         <div class="contact-container">
+
+            
+            <form class="contact-form">
+                  <input type="text" placeholder="Your Name" required>
+                  <input type="email" placeholder="Your Email" required>
+                  <input type="text" placeholder="Subject">
+                  <textarea placeholder="Your Message" rows="5" required></textarea>
+                  <button type="submit">Send Message</button>
+            </form>
+
+            
+            <div class="contact-info">
+                  <h3>Get In Touch</h3>
+                  <p><i class="fa-solid fa-location-dot"></i> Agadir, Morocco</p>
+                  <p><i class="fa-solid fa-phone"></i> +212 6 12 34 56 78</p>
+                  <p><i class="fa-solid fa-envelope"></i> contact@drivelux.com</p>
+
+                  <iframe 
+                     src="https://maps.google.com/maps?q=agadir&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                     frameborder="0"
+                     style="width:100%; height:250px; border-radius:10px;">
+                  </iframe>
+            </div>
+
+         </div>
+
+      </section>
+
+
+
+
+      <footer class="footer">
+
+         <div class="footer-container">
+
+            
+            <div class="footer-box">
+                  <h2>Drive<span>Lux</span></h2>
+                  <p>Luxury in Every Ride</p>
+            </div>
+
+            
+            <div class="footer-box">
+                  <h3>Quick Links</h3>
+                  <a href="#">Accueil</a>
+                  <a href="#cars">Voitures</a>
+                  <a href="#services-section">Services</a>
+                  <a href="#contact">Contact</a>
+            </div>
+
+            
+            <div class="footer-box">
+                  <h3>Contact</h3>
+                  <p>📍 Agadir, Morocco</p>
+                  <p>📞 +212 6 00 00 00 00</p>
+                  <p>📧 drivelux@gmail.com</p>
+            </div>
+
+            
+            <div class="footer-box">
+                  <h3>Follow Us</h3>
+                  <div class="socials">
+                     <i class="fab fa-facebook"></i>
+                     <i class="fab fa-instagram"></i>
+                     <i class="fab fa-whatsapp"></i>
+                  </div>
+            </div>
+
+         </div>
+         
+
+         <p class="copyright">© 2026 DriveLux - All Rights Reserved</p>
+
+      </footer>
+      <script src="home.js"></script>
+</body>
+</html>
